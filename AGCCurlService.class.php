@@ -1,12 +1,9 @@
 <?php
 
 /**
- * AGCCurlService (Newest version 2015/6).
+ * AGCCurlService 
  * 
- * The php class can be used to purchase amazon gift cards. There doesn't seem to be 
- * much on the net about AGC (amazon gift cards); so this class may be really helpful. 
- *
- * With this class you can Buy/Cancel gift cards. 
+ * With this class you can Buy/Cancel gift cards.  
  *
  * please feel free to reach out to 
  * me: ransom1538 (a t ) gmail ( d o  t ) com  
