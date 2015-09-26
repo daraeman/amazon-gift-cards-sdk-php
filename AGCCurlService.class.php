@@ -50,7 +50,7 @@ class AGCCurlService
 	}
 
 	/**
-	 * Buy a gift card
+	 * Buy a gift cardva
 	 *
 	 * @param $gcRequestId A generated unique key, with partnerID as the prefix.  Example: $partner_id . time()
 	 * @return a formatted array
@@ -73,14 +73,12 @@ class AGCCurlService
 		$json = json_decode($curl_response);
 		if ( isset($json->message)  || ! isset($json->cardInfo) )
 		{
-			var_dump($curl_response);
 			$ret = array();
 			$ret['success']=false;
 			$ret['errorCode'] = time();
 			return $ret;
 		}
 
-		var_dump($json);
 		$ret = array();
 		$ret['success']=true;
 		$ret['gcValue']= $json->cardInfo->value->amount;
@@ -385,7 +383,6 @@ class AGCCurlService
 			curl_close($handle); // close cURL handler
 		}
 		 
-		var_dump($result);
 
 		//Free the resource
 		curl_close($handle);
