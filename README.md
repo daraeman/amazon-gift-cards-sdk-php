@@ -5,4 +5,4 @@ Signup for Amazon gift card integration, then you are ready to use this class:
 
 https://www.amazon.com/gift-card-api/b?ie=UTF8&node=15243199011
 
-<a href='test'>http://www.jamesransom.net</a>
+<a href='http://www.jamesransom.net'>http://www.jamesransom.net</a>
