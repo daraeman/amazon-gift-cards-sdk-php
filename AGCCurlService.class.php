@@ -29,16 +29,16 @@ class AGCCurlService
 	private  $secret_key;
 	private  $access_key;
 	private  $partner_id;
-	private $debug; //shows some debug output in html
+	private  $debug; //shows some debug output in html
 
-	const ENDPOINT  ='agcod-v2.amazon.com';
+	const ENDPOINT = "agcod-v2.amazon.com";
 
-	public function __construct()
+	public function __construct( $key, $secret, $partner_id )
 	{
 
-		$this->secret_key = [YOUR SECRET KEY HERE];
-		$this->partner_id="Appre";
-		$this->access_key= [YOUR ACCESS KEY HERE];
+		$this->secret_key = $secret;
+		$this->partner_id = $partner_id;
+		$this->access_key = $key;
 		$this->debug = false;
 
 		if ( $this->debug )
@@ -50,7 +50,7 @@ class AGCCurlService
 	}
 
 	/**
-	 * Buy a gift cardva
+	 * Buy a gift card
 	 *
 	 * @param $gcRequestId A generated unique key, with partnerID as the prefix.  Example: $partner_id . time()
 	 * @return a formatted array
